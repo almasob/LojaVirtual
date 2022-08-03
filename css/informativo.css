@@ -2,6 +2,7 @@
     background-color: #EAF2FD;
     display: flex;
     flex-direction: column;
+    row-gap: 2rem;
 }
 
 .informativo__informacoes{
@@ -30,13 +31,6 @@
 
 
 /*INFORMAÇÕES CONTATOOOOOOO------------------------------------*/
-
-.informativo{
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-}
-
 .informativo__contato,.contato__form{
     display: flex;
     flex-direction: column;
@@ -66,12 +60,46 @@
     background-color: var(--azul-padrao);
     border: none;
     font-weight: var(--fonte-forca-botao);
+    font-size: var(--fonte-texto);
 }
 
 .form__nome::placeholder,.form__texto::placeholder{
     position: absolute;
     top: 5px;
     left: 10px;
+}
+
+@media screen and (min-width:768px){
+    .informativo{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .informativo__informacoes{
+        width: 30%;
+        align-items: flex-start;
+    }
+    .informacoes__titulo{
+        width: 90%;
+    }
+    .informacoes__links{
+        text-align:start;
+        row-gap: 1.5rem;
+    }
+
+    .informacoes__links-item{
+        font-size: 20px;
+    }
+
+    .informativo__contato{
+        width: 60%;
+    }
+
+    .form__btn{
+        min-width: 300px;
+        height: 50px;
+    }
+
 }
 
 

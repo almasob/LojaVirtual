@@ -9,3 +9,9 @@
     font-weight: var(--fonte-forca-titulo);
     text-align: center;
 }
+
+@media screen and (min-width:768px){
+    .copyright{
+          font-size: var(--fonte-texto);  
+ }
+}

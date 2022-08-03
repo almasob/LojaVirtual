@@ -58,8 +58,22 @@
 .box__preco, .box__ver{
     font-weight: var(--fonte-forca-titulo);
 }
+.box__preco{
+    font-size: var(--fonte-valor);
+}
 
 .box__ver{
     color:var(--azul-padrao);
 }
 
+@media screen and (min-width:768px){
+    .principal__secao_boxes{
+        row-gap: 2rem;
+    }
+    
+    .principal__box{
+        width: 23%;
+        justify-content: space-around;
+    }
+
+}
