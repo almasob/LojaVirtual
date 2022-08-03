@@ -1,0 +1,32 @@
+.banner{
+    background-image: url("../imagens/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--branco);
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.banner__titulo{
+    font-size: var(--fonte-titulo);
+    font-weight: var(--fonte-forca-titulo);
+}
+
+.banner__paragrafo{
+    font-size: var(--fonte-texto);
+    margin-top: .5rem;
+    font-weight: var(--fonte-forca-botao);
+}
+
+.banner__btn{
+    background-color: var(--azul-padrao);
+    color:var(--branco);
+    border:none;
+    width: 40%;
+    height: 40px;
+    margin-top: .5rem;
+    font-weight: var(--fonte-forca-botao);
+}
