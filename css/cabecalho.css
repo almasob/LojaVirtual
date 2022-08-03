@@ -1,0 +1,22 @@
+.cabecalho__nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+
+}
+
+.nav__logo{
+    width: 35%;
+}
+
+.nav__btn_login{
+    width: 40%;
+    height: 40px;
+    background-color: white;
+    border:1px solid var(--azul-padrao);
+    color:var(--azul-padrao);
+    font-weight: 500;
+}
+
