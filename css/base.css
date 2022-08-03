@@ -4,12 +4,13 @@
     --fonte-texto: .9rem;
     --fonte-forca-titulo: 700;
     --fonte-forca-botao:500;
-    --fonte-forca-texto:500;
-    
+    --fonte-forca-texto:400;
+    --fonte-cinza-padrao:#464646;    
     --azul-padrao: #2A7AE4;
     --branco: white;
     
     font-family: var(--fonte-padrao);
+    color:var(--fonte-cinza-padrao);
 }
 
 .container{
@@ -18,3 +19,4 @@
     box-sizing: border-box;
     
 }
+

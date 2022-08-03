@@ -1,0 +1,78 @@
+.informativo{
+    background-color: #EAF2FD;
+    display: flex;
+    flex-direction: column;
+}
+
+.informativo__informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.informacoes__titulo{
+    width: 50%;
+}
+
+.informacoes__links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    text-align: center;
+}
+
+.informacoes__links-item{
+    color: var(--fonte-cinza-padrao);
+    text-decoration: none;
+    font-weight: var(--fonte-forca-botao);
+}
+
+
+/*INFORMAÇÕES CONTATOOOOOOO------------------------------------*/
+
+.informativo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.informativo__contato,.contato__form{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+.contato__titulo{
+    font-weight: var(--fonte-forca-titulo);
+}
+
+.form__nome,.form__texto{
+    border:1px outset var(--branco);
+    font-size: var(--fonte-texto);
+    padding: 5px;
+    font-weight: var(--fonte-forca-texto);
+    border-radius: 4px;
+    
+}
+
+.form__nome{
+    height: 56px;
+}
+
+.form__btn{
+    width: 50%;
+    height: 40px;
+    color: var(--branco);
+    background-color: var(--azul-padrao);
+    border: none;
+    font-weight: var(--fonte-forca-botao);
+}
+
+.form__nome::placeholder,.form__texto::placeholder{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+
+

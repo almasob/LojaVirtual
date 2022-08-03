@@ -1,0 +1,11 @@
+.rodape{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright{
+    font-weight: var(--fonte-forca-titulo);
+    text-align: center;
+}
