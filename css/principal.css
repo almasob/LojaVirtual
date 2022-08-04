@@ -51,6 +51,10 @@
     row-gap: .5rem;
 }
 
+.principal__box-invisivel{
+    display: none;
+}
+
 .box__nome, .box__ver{
     font-size: var(--fonte-texto);
 }
@@ -67,13 +71,32 @@
 }
 
 @media screen and (min-width:768px){
+
+    .principal{
+        row-gap: 4rem;
+    }
+
     .principal__secao_boxes{
-        row-gap: 2rem;
+        column-gap: 1rem;
     }
     
     .principal__box{
         width: 23%;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
+}
+
+@media screen and (min-width:1024px){
+    .principal__box-invisivel{
+        display: flex;
+    }
+
+    .principal__box{
+        width: 15%;
+    }
+
+    .box__img{
+       height: 180px;
+    }
 }

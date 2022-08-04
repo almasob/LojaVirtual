@@ -102,5 +102,20 @@
 
 }
 
+@media screen and (min-width:1024px){
+    .informativo__informacoes{
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .informacoes__titulo{
+        width: 35%;
+    }
+
+    .informativo__contato{
+        width: 45%;
+    }
+}
 
 

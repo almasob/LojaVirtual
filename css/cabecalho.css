@@ -45,6 +45,27 @@
         background-color: #F5F5F5;
         width: 75%;
         height: 30px;
+        
     }
 }
+
+@media screen and (min-width:1024px){
+    .nav__logo{
+        margin-right: 2rem;
+        max-width: 250px;
+    }
+
+    .nav__pesquisa{
+        margin-right: auto;
+        max-width: 400px;
+        height: 50px;
+    }
+
+    .nav__btn_login{
+        max-width: 200px;
+        height: 55px;
+        font-size: var(--fonte-texto);
+    }
+}
+
 

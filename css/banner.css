@@ -38,3 +38,14 @@
     }
     
 }
+
+@media screen and (min-width:1024px){
+    .banner{
+        height: 42vh;
+    }
+    .banner__btn{
+        height: 50px;
+        font-size: var(--fonte-texto);
+        max-width: 250px;
+    }
+}
