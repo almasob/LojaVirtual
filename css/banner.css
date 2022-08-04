@@ -41,7 +41,7 @@
 
 @media screen and (min-width:1024px){
     .banner{
-        height: 42vh;
+        height: 50vh;
     }
     .banner__btn{
         height: 50px;
