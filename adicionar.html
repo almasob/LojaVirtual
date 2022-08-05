@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang=" pt-br">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="./css/reset.css" rel="stylesheet" type="text/css">
+        <link href="./css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="./css/base.css" rel="stylesheet" type="text/css">
+        <link href="./css/cabecalho.css" rel="stylesheet" type="text/css">
+        <link href="./css/adicionar.css" rel = "stylesheet" typw="text/css">
+        <link href="./css/informativo.css" rel="stylesheet" type="text/css">
+        <link href="./css/rodape.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <section class="cabecalho container">
+                <nav class="cabecalho__nav">
+                    <img src="./imagens/logo.svg" alt="Logo Alura" class="nav__logo">
+                    <button class="nav__btn_login"><a class="btn__login_link" href="#">Pessoa Logada</a></button>
+                    <div class="nav__pesquisa">
+                        <input type="text" class="pesquisa__input">
+                        <img src="./imagens/lupa.svg" alt="lupa de pesquisa" class="pesquisa__lupa">
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section class="adicionar container">
+                <h2 class="adicionar__titulo">Adicionar novo produto</h2>
+                <input type="text" class="adicionar__input" placeholder="URL da imagem">
+                <input type="text" class="adicionar__input" placeholder="Categoria">
+                <input type="text" class="adicionar__input" placeholder="Nome do produto">
+                <input type="text" class="adicionar__input" placeholder="Preço do produto">
+                <textarea name="" id="" cols="30" rows="8" class="adicionar__texto" placeholder="Descrição do produto"></textarea>
+                <button class="adicionar__btn">Adicionar produto</button>
+            </section>
+            <section class="informativo container">
+                <div class="informativo__informacoes">
+                    <img src="./imagens/logo.svg" alt="" class="informacoes__titulo">
+                    <div class="informacoes__links">
+                        <a href="" class="informacoes__links-item">Quem somos nós</a>
+                        <a href="" class="informacoes__links-item">Política de privacidade</a>
+                        <a href="" class="informacoes__links-item">Programaa fidelidade</a>
+                        <a href="" class="informacoes__links-item">Nossas lojas</a>
+                        <a href="" class="informacoes__links-item">Quero ser franqueado</a>
+                        <a href="" class="informacoes__links-item">Anuncie aqui</a>
+                    </div>
+                </div>
+                <div class="informativo__contato">
+                    <h2 class="contato__titulo">Fale conosco</h2>
+                    <form action="" class="contato__form">
+                        <input type="text" class="form__nome" placeholder="Nome">
+                        <textarea name="" id="" cols="30" rows="5" class="form__texto" placeholder="Escreva sua mensagem"></textarea>
+                        <button class="form__btn">Enviar mensagem</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer class="rodape container">
+        <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
+    </footer>
+</html>
