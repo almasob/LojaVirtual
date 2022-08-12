@@ -23,12 +23,16 @@
 
 .banner__btn{
     background-color: var(--azul-padrao);
-    color:var(--branco);
     border:none;
     width: 40%;
     max-width: 200px;
     height: 40px;
+}
+
+.banner__btn a {
+    color:var(--branco);
     font-weight: var(--fonte-forca-botao);
+    text-decoration: none;
 }
 
 @media screen and (min-width:768px){

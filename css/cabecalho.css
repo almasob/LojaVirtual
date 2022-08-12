@@ -4,10 +4,14 @@
     justify-content: space-between;
     align-items: center;
 }
-
+/*link*/
 .nav__logo{
     width: 35%;
     max-width:200px ;
+}
+
+.logo__img{
+    width: 100%;
 }
 
 .nav__btn_login{

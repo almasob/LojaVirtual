@@ -15,13 +15,14 @@
     <link href="./css/principal.css" rel="stylesheet" type="text/css">
     <link href="./css/informativo.css" rel="stylesheet" type="text/css">
     <link href="./css/rodape.css" rel="stylesheet" type="text/css">
+    <link href="./css/validadores.css" rel="stylesheet" type="text/css">
     <title>Alura Week - Home</title>
 </head>
 <body>
     <header>
         <section class="cabecalho container">
             <nav class="cabecalho__nav">
-                <img src="./imagens/logo.svg" alt="Logo Alura" class="nav__logo">
+                <a class="nav__logo" href="index.html"><img src="./imagens/logo.svg" alt="Logo Alura" class="logo__img"></a>
                 <button class="nav__btn_login"><a class="btn__login_link" href="login.html">Login</a></button>
                 <div class="nav__pesquisa">
                     <input type="text" class="pesquisa__input">
@@ -34,7 +35,7 @@
         <section class="banner container">
             <h2 class="banner__titulo">Dezembro promocional</h2>
             <p class="banner__paragrafo">Produtos selecionados com 33% de desconto</p>
-            <button class="banner__btn">Ver consoles</button>
+            <button class="banner__btn" type="button"><a href="#consoles">Ver consoles</a></button>
         </section>
         <section class="principal container">
             <div class="principal__secao">
@@ -81,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="principal__secao">
+            <div class="principal__secao" id="consoles">
                 <div class="principal__secao_header">
                     <h2 class="principal__secao_titulo">Consoles</h2>
                     <a href="" class="principal__secao_verTudo">Ver tudo<img src="./imagens/setaDireita.svg" class="setaDireita"></a>
@@ -185,8 +186,10 @@
             <div class="informativo__contato">
                 <h2 class="contato__titulo">Fale conosco</h2>
                 <form action="" class="contato__form">
-                    <input type="text" class="form__nome" placeholder="Nome">
-                    <textarea name="" id="" cols="30" rows="5" class="form__texto" placeholder="Escreva sua mensagem"></textarea>
+                    <input data-tipo="nome" type="text" class="form__nome" placeholder="Nome" maxlength="40" required>
+                    <span class="form__nome-erro" data-tipo="msgErro"></span>
+                    <textarea data-tipo="mensagem" cols="30" rows="5" class="form__texto" placeholder="Escreva sua mensagem" maxlength="120" required data-tipo="texto"></textarea>
+                    <span class="form__nome-erro" data-tipo="msgErro"></span>
                     <button class="form__btn">Enviar mensagem</button>
                 </form>
             </div>
@@ -195,5 +198,6 @@
     <footer class="rodape container">
         <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
     </footer>
+    <script src="./js/validacaoContato.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 :root{
     --fonte-padrao:'Raleway', sans-serif;
     --fonte-titulo: 1.5rem;
@@ -12,6 +13,8 @@
     
     font-family: var(--fonte-padrao);
     color:var(--fonte-cinza-padrao);
+
+    scroll-behavior: smooth;
 }
 
 .container{
