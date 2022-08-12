@@ -14,6 +14,7 @@
         <link href="./css/iniciarSessao.css" rel="stylesheet" type="text/css">
         <link href="./css/informativo.css" rel="stylesheet" type="text/css">
         <link href="./css/rodape.css" rel="stylesheet" type="text/css">
+        <link href="./css/validadores.css" rel="stylesheet" type="text/css">
         <title>Alura Week - Login</title>
     </head>
     <body>
@@ -29,12 +30,14 @@
             </section>
         </header>
         <main>
-            <section class="iniciarSessao container">
+            <form class="iniciarSessao container">
                 <h2 class="iniciarSessao__titulo">Iniciar Sessão</h2>
-                <input type="text" placeholder="Escreva seu email">
-                <input type="text" placeholder="Escreva sua senha">
+                <input data-tipo="email" type="email" placeholder="Escreva seu email" required>
+                <span class="form__erro 1" data-tipo="msgErro"></span>
+                <input data-tipo="senha" type="password" placeholder="Escreva sua senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}">
+                <span class="form__erro 2" data-tipo="msgErro"></span>
                 <button class="inciarSessao__btn">Entrar</button>
-            </section>
+            </form>
             <section class="informativo container">
                 <div class="informativo__informacoes">
                     <img src="./imagens/logo.svg" alt="" class="informacoes__titulo">
@@ -60,5 +63,6 @@
         <footer class="rodape container">
             <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
         </footer>
+        <script src="./js/validarLogin.js"></script>
     </body>
 </html>
