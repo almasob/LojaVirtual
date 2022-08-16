@@ -32,10 +32,10 @@
         <main>
             <form class="iniciarSessao container">
                 <h2 class="iniciarSessao__titulo">Iniciar Sessão</h2>
-                <input data-tipo="email" type="email" placeholder="Escreva seu email" required>
-                <span class="form__erro 1" data-tipo="msgErro"></span>
-                <input data-tipo="senha" type="password" placeholder="Escreva sua senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}">
-                <span class="form__erro 2" data-tipo="msgErro"></span>
+                <input data-tipo="campo" type="email" placeholder="Escreva seu email" required>
+                <span class="form__erro" data-tipo="msgErro"></span>
+                <input data-tipo="campo" type="password" placeholder="Escreva sua senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}">
+                <span class="form__erro" data-tipo="msgErro"></span>
                 <button class="inciarSessao__btn">Entrar</button>
             </form>
             <section class="informativo container">
@@ -53,8 +53,10 @@
                 <div class="informativo__contato">
                     <h2 class="contato__titulo">Fale conosco</h2>
                     <form action="" class="contato__form">
-                        <input type="text" class="form__nome" placeholder="Nome">
-                        <textarea name="" id="" cols="30" rows="5" class="form__texto" placeholder="Escreva sua mensagem"></textarea>
+                        <input data-tipo="campo" type="text" class="form__nome" placeholder="Nome" maxlength="40" required>
+                        <span class="form__erro" data-tipo="msgErro"></span>
+                        <textarea data-tipo="campo" cols="30" rows="5" class="form__texto" placeholder="Escreva sua mensagem" maxlength="120" required data-tipo="texto"></textarea>
+                        <span class="form__erro" data-tipo="msgErro"></span>
                         <button class="form__btn">Enviar mensagem</button>
                     </form>
                 </div>
@@ -63,6 +65,6 @@
         <footer class="rodape container">
             <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
         </footer>
-        <script src="./js/validarLogin.js"></script>
+        <script src="./js/app.js"></script>
     </body>
 </html>

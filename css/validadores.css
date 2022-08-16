@@ -1,5 +1,8 @@
 .form__erro{
-    color: red;
+    font-size: 0.8rem;
+    color: rgb(255, 0, 85);
     font-weight: 700;
+    position:relative;
+    top: -6px;
     
 }

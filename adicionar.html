@@ -13,6 +13,7 @@
         <link href="./css/adicionar.css" rel = "stylesheet" typw="text/css">
         <link href="./css/informativo.css" rel="stylesheet" type="text/css">
         <link href="./css/rodape.css" rel="stylesheet" type="text/css">
+        <link href="./css/validadores.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
@@ -28,15 +29,20 @@
             </section>
         </header>
         <main>
-            <section class="adicionar container">
+            <form class="adicionar container">
                 <h2 class="adicionar__titulo">Adicionar novo produto</h2>
-                <input type="text" class="adicionar__input" placeholder="URL da imagem">
-                <input type="text" class="adicionar__input" placeholder="Categoria">
-                <input type="text" class="adicionar__input" placeholder="Nome do produto">
-                <input type="text" class="adicionar__input" placeholder="Preço do produto">
-                <textarea name="" id="" cols="30" rows="8" class="adicionar__texto" placeholder="Descrição do produto"></textarea>
+                <input data-tipo="campo" type="text" class="adicionar__input" placeholder="URL da imagem" required>
+                <span class="form__erro" data-tipo="msgErro"></span>
+                <input data-tipo="campo" type="text" class="adicionar__input" placeholder="Categoria" required>
+                <span class="form__erro" data-tipo="msgErro"></span>
+                <input data-tipo="campo" type="text" class="adicionar__input" placeholder="Nome do produto" maxlength="20" required>
+                <span class="form__erro" data-tipo="msgErro"></span>
+                <input data-tipo="campo" data-conteudo="preco" type="text" class="adicionar__input" placeholder="Preço do produto" required>
+                <span class="form__erro" data-tipo="msgErro" ></span>
+                <textarea data-tipo="campo" name="" id="" cols="30" rows="8" class="adicionar__texto" placeholder="Descrição do produto" maxlength="150" required></textarea>
+                <span class="form__erro" data-tipo="msgErro"></span>
                 <button class="adicionar__btn">Adicionar produto</button>
-            </section>
+            </form>
             <section class="informativo container">
                 <div class="informativo__informacoes">
                     <img src="./imagens/logo.svg" alt="" class="informacoes__titulo">
@@ -52,15 +58,19 @@
                 <div class="informativo__contato">
                     <h2 class="contato__titulo">Fale conosco</h2>
                     <form action="" class="contato__form">
-                        <input type="text" class="form__nome" placeholder="Nome">
-                        <textarea name="" id="" cols="30" rows="5" class="form__texto" placeholder="Escreva sua mensagem"></textarea>
+                        <input data-tipo="campo" type="text" class="form__nome" placeholder="Nome" maxlength="40" required>
+                        <span class="form__erro" data-tipo="msgErro"></span>
+                        <textarea data-tipo="campo" cols="30" rows="5" class="form__texto" placeholder="Escreva sua mensagem" maxlength="120" required data-tipo="texto"></textarea>
+                        <span class="form__erro" data-tipo="msgErro"></span>
                         <button class="form__btn">Enviar mensagem</button>
                     </form>
                 </div>
             </section>
         </main>
+        <footer class="rodape container">
+             <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
+        </footer>
+        <script src="./js/app.js" type="module"></script>
+        <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
     </body>
-    <footer class="rodape container">
-        <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
-    </footer>
 </html>
