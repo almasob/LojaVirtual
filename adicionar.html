@@ -29,17 +29,17 @@
             </section>
         </header>
         <main>
-            <form class="adicionar container">
+            <form action="" class="adicionar container" data-form>
                 <h2 class="adicionar__titulo">Adicionar novo produto</h2>
-                <input data-tipo="campo" type="text" class="adicionar__input" placeholder="URL da imagem" required>
+                <input data-tipo="campo" type="text" class="adicionar__input" placeholder="URL da imagem" required data-url>
                 <span class="form__erro" data-tipo="msgErro"></span>
-                <input data-tipo="campo" type="text" class="adicionar__input" placeholder="Categoria" required>
+                <input data-tipo="campo" type="text" class="adicionar__input" placeholder="Categoria"  data-categoria>
                 <span class="form__erro" data-tipo="msgErro"></span>
-                <input data-tipo="campo" type="text" class="adicionar__input" placeholder="Nome do produto" maxlength="20" required>
+                <input data-tipo="campo" type="text" class="adicionar__input" placeholder="Nome do produto" maxlength="20" required data-nome>
                 <span class="form__erro" data-tipo="msgErro"></span>
-                <input data-tipo="campo" data-conteudo="preco" type="text" class="adicionar__input" placeholder="Preço do produto" required>
+                <input data-tipo="campo" data-conteudo="preco" type="text" class="adicionar__input" placeholder="Preço do produto" required data-preco>
                 <span class="form__erro" data-tipo="msgErro" ></span>
-                <textarea data-tipo="campo" name="" id="" cols="30" rows="8" class="adicionar__texto" placeholder="Descrição do produto" maxlength="150" required></textarea>
+                <textarea data-tipo="campo" name="" id="" cols="30" rows="8" class="adicionar__texto" placeholder="Descrição do produto" maxlength="150" data-descricao></textarea>
                 <span class="form__erro" data-tipo="msgErro"></span>
                 <button class="adicionar__btn">Adicionar produto</button>
             </form>
@@ -71,6 +71,7 @@
              <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
         </footer>
         <script src="./js/app.js" type="module"></script>
+        <script src="./controler/controler-criaProdutos.js" type="module"></script>
         <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
     </body>
 </html>

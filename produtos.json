@@ -1,0 +1,10 @@
+{
+  "produtos": [
+    {
+      "nome": "Allan",
+      "preco": "R$ 50,00",
+      "urlImagem": "https://d1cx5wjdz7n3s3.cloudfront.net/media/webp/Camiseta_Programador_Desenvolvedor_Java_Php_Phyton-182920062909-117_lg.png",
+      "id": 1
+    }
+  ]
+}
