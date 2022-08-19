@@ -3,9 +3,10 @@
 import { produtosServicos } from "../servicos/servicos-produtos.js";
 
 //criamos uma div que receberá as informações do novo produto
-const novoProduto = (nome,preco,urlImagem) =>{
+const novoProduto = (nome,preco,urlImagem,id) =>{
     const card = document.createElement("div");
     card.classList.add("produtos__box");
+    card.id = id;
     const conteudo = 
     `   <div class="box__icones">
             <img src="./imagens/lixo.png" alt="icone lixo" class="icone__lixo">
@@ -30,11 +31,11 @@ const render = async () => {
     try{
         const listaProdutos = await produtosServicos.chamaProdutos()
         listaProdutos.forEach(item => {
-            todosProdutos.appendChild(novoProduto(item.nome,item.preco,item.urlImagem))
+            todosProdutos.appendChild(novoProduto(item.nome,item.preco,item.urlImagem,item.id))
         })
         }
     catch(erro){
-        console.log("ola")
+        console.log(erro)
     }
 }
 

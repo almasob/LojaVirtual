@@ -1,10 +1,112 @@
 {
   "produtos": [
     {
-      "nome": "Allan",
-      "preco": "R$ 50,00",
-      "urlImagem": "https://d1cx5wjdz7n3s3.cloudfront.net/media/webp/Camiseta_Programador_Desenvolvedor_Java_Php_Phyton-182920062909-117_lg.png",
+      "nome": "Caneca Stormtrooper",
+      "preco": "R$57,00",
+      "urlImagem": "./imagens/starCaneca.jpg",
       "id": 1
+    },
+    {
+      "nome": "Lego Darth Vader",
+      "preco": "R$499,00",
+      "urlImagem": "./imagens/starLego.jpg",
+      "id": 2
+    },
+    {
+      "nome": "Boneco Mestre Jedi",
+      "preco": "R$100,00",
+      "urlImagem": "./imagens/starBonecp.jpg",
+      "id": 3
+    },
+    {
+      "nome": "Fantasia Stormtrooper",
+      "preco": "R$199,00",
+      "urlImagem": "./imagens/starFantasia.jpg",
+      "id": 4
+    },
+    {
+      "nome": "Fantasia Darth Vader",
+      "preco": "R$199,00",
+      "urlImagem": "./imagens/starPreto.jpg",
+      "id": 5
+    },
+    {
+      "nome": "Boneco Baby Yoda",
+      "preco": "R$209,00",
+      "urlImagem": "./imagens/starBaby.jpg",
+      "id": 6
+    },
+    {
+      "nome": "Controle Xbox",
+      "preco": "R$399,00",
+      "urlImagem": "./imagens/consolesControleXbox.jpg",
+      "id": 7
+    },
+    {
+      "nome": "PlayStation 5",
+      "preco": "R$4990,00",
+      "urlImagem": "./imagens/consolesPlay5.jpg",
+      "id": 8
+    },
+    {
+      "nome": "Nintendo Entertainment System",
+      "preco": "R$299,00",
+      "urlImagem": "./imagens/consoleNintendo.jpg",
+      "id": 9
+    },
+    {
+      "nome": "Controle Nintendo Joy",
+      "preco": "R$349,00",
+      "urlImagem": "./imagens/consoleJoy.jpg",
+      "id": 10
+    },
+    {
+      "nome": "Gameboy com jogos",
+      "preco": "R$599,00",
+      "urlImagem": "./imagens/consoleGameBoy.jpg",
+      "id": 11
+    },
+    {
+      "nome": "Xbox Series X",
+      "preco": "R$4999,00",
+      "urlImagem": "./imagens/consoleXboxX.jpg",
+      "id": 12
+    },
+    {
+      "nome": "Camiseta Atari",
+      "preco": "R$49,90",
+      "urlImagem": "./imagens/diversosCamisaatari.png",
+      "id": 13
+    },
+    {
+      "nome": "Camiseta SNES",
+      "preco": "R$49,90",
+      "urlImagem": "./imagens/diversosCamisaSNES.png",
+      "id": 14
+    },
+    {
+      "nome": "Radio Despertador Antigo",
+      "preco": "R$159,00",
+      "urlImagem": "./imagens/diversosRedio.png",
+      "id": 15
+    },
+    {
+      "nome": "Brinquedo de pelucia Pikachu",
+      "preco": "R$69,00",
+      "urlImagem": "./imagens/diversosPicachu.jpg",
+      "id": 16
+    },
+    {
+      "nome": "Kit Realidade Virtual",
+      "preco": "R$1999,00",
+      "urlImagem": "./imagens/diversosVirtual.jpg",
+      "id": 17
+    },
+    {
+      "nome": "Kit Bonecos Sonic",
+      "preco": "R$99,99",
+      "urlImagem": "./imagens/diversosSonic.png",
+      "id": 18
     }
   ]
 }

@@ -26,7 +26,12 @@
     align-items: center;
     height: 40px;
     border: none;
-    
+}
+
+.produtos__adicionar a{
+    color:var(--branco);
+    font-weight: var(--fonte-forca-botao);
+    text-decoration: none;
 }
 
 .produtos__boxes{
