@@ -15,52 +15,55 @@
         <link href="./css/informativo.css" rel="stylesheet" type="text/css">
         <link href="./css/rodape.css" rel="stylesheet" type="text/css">
     </head>
-    <header>
-        <section class="cabecalho container">
-            <nav class="cabecalho__nav">
-                <a class="nav__logo" href="index.html"><img src="./imagens/logo.svg" alt="Logo Alura" class="logo__img"></a>
-                <div class="nav__pesquisa">
-                    <input type="text" class="pesquisa__input">
-                    <img src="./imagens/lupa.svg" alt="lupa de pesquisa" class="pesquisa__lupa">
+    <body>
+        <header>
+            <section class="cabecalho container">
+                <nav class="cabecalho__nav">
+                    <a class="nav__logo" href="index.html"><img src="./imagens/logo.svg" alt="Logo Alura" class="logo__img"></a>
+                    <div class="nav__pesquisa">
+                        <input type="text" class="pesquisa__input">
+                        <img src="./imagens/lupa.svg" alt="lupa de pesquisa" class="pesquisa__lupa">
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section class="produtos container">
+                <div class="produtos__header">
+                    <h2 class="produtos__titulo">Todos os produtos</h2>
+                    <button class="produtos__adicionar"><a href="./adicionar.html">Adicionar produto</a></button>
                 </div>
-            </nav>
-        </section>
-    </header>
-    <main>
-        <section class="produtos container">
-            <div class="produtos__header">
-                <h2 class="produtos__titulo">Todos os produtos</h2>
-                <button class="produtos__adicionar"><a href="./adicionar.html">Adicionar produto</a></button>
-            </div>
-            <div class="produtos__boxes" data-produtos>
-            </div>
-            </div>
-        </section>
-        <section class="informativo container">
-            <div class="informativo__informacoes">
-                <img src="./imagens/logo.svg" alt="" class="informacoes__titulo">
-                <div class="informacoes__links">
-                    <a href="" class="informacoes__links-item">Quem somos nós</a>
-                    <a href="" class="informacoes__links-item">Política de privacidade</a>
-                    <a href="" class="informacoes__links-item">Programaa fidelidade</a>
-                    <a href="" class="informacoes__links-item">Nossas lojas</a>
-                    <a href="" class="informacoes__links-item">Quero ser franqueado</a>
-                    <a href="" class="informacoes__links-item">Anuncie aqui</a>
+                <div class="produtos__boxes" data-produtos>
                 </div>
-            </div>
-            <div class="informativo__contato">
-                <h2 class="contato__titulo">Fale conosco</h2>
-                <form action="" class="contato__form">
-                    <input type="text" class="form__nome" placeholder="Nome">
-                    <textarea name="" id="" cols="30" rows="5" class="form__texto" placeholder="Escreva sua mensagem"></textarea>
-                    <button class="form__btn">Enviar mensagem</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer class="rodape container">
-        <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
-    </footer>
-    <script src="./controler/controler-produtos.js" type="module"></script>
-    <script src="./controler/controler-deleta.js" type="module"></script>
+                </div>
+            </section>
+            <section class="informativo container">
+                <div class="informativo__informacoes">
+                    <img src="./imagens/logo.svg" alt="" class="informacoes__titulo">
+                    <div class="informacoes__links">
+                        <a href="" class="informacoes__links-item">Quem somos nós</a>
+                        <a href="" class="informacoes__links-item">Política de privacidade</a>
+                        <a href="" class="informacoes__links-item">Programaa fidelidade</a>
+                        <a href="" class="informacoes__links-item">Nossas lojas</a>
+                        <a href="" class="informacoes__links-item">Quero ser franqueado</a>
+                        <a href="" class="informacoes__links-item">Anuncie aqui</a>
+                    </div>
+                </div>
+                <div class="informativo__contato">
+                    <h2 class="contato__titulo">Fale conosco</h2>
+                    <form action="" class="contato__form">
+                        <input type="text" class="form__nome" placeholder="Nome">
+                        <textarea name="" id="" cols="30" rows="5" class="form__texto" placeholder="Escreva sua mensagem"></textarea>
+                        <button class="form__btn">Enviar mensagem</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape container">
+            <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
+        </footer>
+        <script src="./controler/controler-produtos.js" type="module"></script>
+        <script src="./controler/controler-deleta.js" type="module"></script>
+        <script src="./controler/controler-editar.js" type="module"></script>
+    </body>
 </html>

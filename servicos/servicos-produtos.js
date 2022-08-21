@@ -29,11 +29,22 @@ const deletaProdutos = (id)=>{
 
         )
 }
+
+const detalhaProduto = (id) => {
+    return fetch(`http://localhost:3000/produtos/${id}`)
+    .then(resposta => {
+        return resposta.json()
+    })
+}
+
+const atualizaProduto = 
+
     
 
 
 export const produtosServicos = {
     chamaProdutos,
     criaProdutos,
-    deletaProdutos
+    deletaProdutos,
+    detalhaProduto
 }
