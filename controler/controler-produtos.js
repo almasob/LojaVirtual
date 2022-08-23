@@ -40,3 +40,18 @@ const render = async () => {
 }
 
 render()
+
+//clicando no editar e direcionando para página certa
+window.addEventListener("click",(evento) =>{
+    const cliquei = evento.target;
+    const clicadoLapis = cliquei.classList.contains("icone__lapis")
+
+    if(clicadoLapis){
+        const id = cliquei.closest(".produtos__box").id;
+        window.location.href = `editar.html?id=${id}`
+        
+    }
+
+
+})
+

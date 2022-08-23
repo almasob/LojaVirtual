@@ -2,8 +2,8 @@
   "produtos": [
     {
       "nome": "Caneca Stormtrooper",
-      "preco": "R$57,00",
       "urlImagem": "./imagens/starCaneca.jpg",
+      "preco": "R$57,00",
       "id": 1
     },
     {

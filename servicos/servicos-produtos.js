@@ -37,7 +37,18 @@ const detalhaProduto = (id) => {
     })
 }
 
-const atualizaProduto = 
+const atualizaProduto = (id,url,nome,preco)=>{
+    return fetch(`http://localhost:3000/produtos/${id}`,{
+        method: 'PUT',
+        headers:{'Content-type':'application/json'},
+        body:JSON.stringify(
+            {nome :nome,
+            urlImagem :url,
+            preco : preco})
+    }).then(resposta =>{
+        return resposta.json();
+    })
+}
 
     
 
@@ -46,5 +57,6 @@ export const produtosServicos = {
     chamaProdutos,
     criaProdutos,
     deletaProdutos,
-    detalhaProduto
+    detalhaProduto,
+    atualizaProduto
 }
