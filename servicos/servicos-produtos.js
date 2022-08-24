@@ -50,6 +50,20 @@ const atualizaProduto = (id,url,nome,preco)=>{
     })
 }
 
+const produtoPesquisado = (nome,preco,urlImagem,id) =>{
+    const card = document.createElement("div");
+    card.classList.add("principal__box");
+    card.id = id;
+    const conteudo = 
+    `   <img src="${urlImagem}" alt="${nome}" class="box__img">
+        <h3 class="box__nome">${nome}</h3>
+        <h3 class="box__preco">${preco}</h3>
+        <h3 class="box__ver">Ver Produto</h3>
+        `
+    card.innerHTML = conteudo;
+    return card;
+}
+
     
 
 
@@ -58,5 +72,6 @@ export const produtosServicos = {
     criaProdutos,
     deletaProdutos,
     detalhaProduto,
-    atualizaProduto
+    atualizaProduto,
+    produtoPesquisado
 }
