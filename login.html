@@ -30,13 +30,13 @@
             </section>
         </header>
         <main>
-            <form class="iniciarSessao container">
+            <form action='' class="iniciarSessao container" data-formLogin>
                 <h2 class="iniciarSessao__titulo">Iniciar Sessão</h2>
                 <input data-tipo="campo" type="email" placeholder="Escreva seu email" required>
                 <span class="form__erro" data-tipo="msgErro"></span>
                 <input data-tipo="campo" type="password" placeholder="Escreva sua senha" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}">
                 <span class="form__erro" data-tipo="msgErro"></span>
-                <button class="inciarSessao__btn">Entrar</button>
+                <button class="inciarSessao__btn" data-entrar>Entrar</button>
             </form>
             <section class="informativo container">
                 <div class="informativo__informacoes">
@@ -66,6 +66,6 @@
             <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
         </footer>
         <script src="./js/app.js"></script>
-        <script src="./controler/controler-pesquisa.js" type="module"></script>
+        <script src="./controler/controler-login.js" type="module"></script>
     </body>
 </html>
