@@ -13,7 +13,7 @@
     <link href="./css/cabecalho.css" rel="stylesheet" type="text/css">
     <link href="./css/banner.css" rel="stylesheet" type="text/css">
     <link href="./css/principal.css" rel="stylesheet" type="text/css">
-    <link href="./css/produtos.css" rel="stylesheet" type="text/css">
+    <link href="./css/descricao.css" rel="stylesheet" type="text/css">
     <link href="./css/informativo.css" rel="stylesheet" type="text/css">
     <link href="./css/rodape.css" rel="stylesheet" type="text/css">
     <link href="./css/validadores.css" rel="stylesheet" type="text/css">
@@ -26,15 +26,61 @@
                 <a class="nav__logo" href="index.html"><img src="./imagens/logo.svg" alt="Logo Alura" class="logo__img"></a>
                 <button class="nav__btn_login"><a class="btn__login_link" href="login.html">Login</a></button>
                 <div class="nav__pesquisa">
-                    <input type="text" class="pesquisa__input" data-pesquisa placeholder="Digite para pesquisar...">
+                    <input type="text" class="pesquisa__input" data-pesquisa placeholder="Digite para pesquisar..."> 
                     <img src="./imagens/lupa.svg" alt="lupa de pesquisa" class="pesquisa__lupa" data-pesquisar>
                 </div>
             </nav>
         </section>
     </header>
     <main>
-        <section class="container produtos__boxes" data-todosProdutos>
-
+        <section class="descricao__principal">
+            <div class="descricao__principal-unico">
+                <img src="./imagens/diversosCamisaatari.png" class="img__unico">
+                <div class="infos__unico container">
+                    <h2 class="unico__titulo">Camiseta SNES</h2>
+                    <h2 class="unico__preco">R$49,90</h2>
+                    <p class="unico__paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium vero dolorem, obcaecati laborum quas perspiciatis molestias hic expedita fugiat pariatur enim totam? Libero, reprehenderit. Dolores accusamus expedita doloribus excepturi?</p>
+                </div>
+            </div>  
+            <div class="descricao__principal-varios container">
+                <h2 class="varios__titulo">Produtos similares</h2>
+                <div class="varios__box">
+                    <img src="./imagens/diversosCamisaatari.png" alt="" class="varios__img">
+                    <h3 class="varios__nome">Camiseta Atari</h3>
+                    <h3 class="varios__preco">R$49,90</h3>
+                    <h3 class="varios__ver">Ver Produto</h3>
+                </div>
+                <div class="varios__box">
+                    <img src="./imagens/diversosCamisaatari.png" alt="" class="varios__img">
+                    <h3 class="varios__nome">Camiseta Atari</h3>
+                    <h3 class="varios__preco">R$49,90</h3>
+                    <h3 class="varios__ver">Ver Produto</h3>
+                </div>
+                <div class="varios__box">
+                    <img src="./imagens/diversosCamisaatari.png" alt="" class="varios__img">
+                    <h3 class="varios__nome">Camiseta Atari</h3>
+                    <h3 class="varios__preco">R$49,90</h3>
+                    <h3 class="varios__ver">Ver Produto</h3>
+                </div>
+                <div class="varios__box">
+                    <img src="./imagens/diversosCamisaatari.png" alt="" class="varios__img">
+                    <h3 class="varios__nome">Camiseta Atari</h3>
+                    <h3 class="varios__preco">R$49,90</h3>
+                    <h3 class="varios__ver">Ver Produto</h3>
+                </div>
+                <div class="varios__box">
+                    <img src="./imagens/diversosCamisaatari.png" alt="" class="varios__img">
+                    <h3 class="varios__nome">Camiseta Atari</h3>
+                    <h3 class="varios__preco">R$49,90</h3>
+                    <h3 class="varios__ver">Ver Produto</h3>
+                </div>
+                <div class="varios__box">
+                    <img src="./imagens/diversosCamisaatari.png" alt="" class="varios__img">
+                    <h3 class="varios__nome">Camiseta Atari</h3>
+                    <h3 class="varios__preco">R$49,90</h3>
+                    <h3 class="varios__ver">Ver Produto</h3>
+                </div>
+            </div>
         </section>
         <section class="informativo container">
             <div class="informativo__informacoes">
@@ -64,7 +110,6 @@
         <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>
     </footer>
     <script src="./js/app.js"></script>
-    <script src="./controler/controler-todosProdutos.js" type="module"></script>
     <script src="./controler/controler-pesquisa.js" type="module"></script>
 </body>
 </html>

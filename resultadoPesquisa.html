@@ -13,6 +13,7 @@
     <link href="./css/cabecalho.css" rel="stylesheet" type="text/css">
     <link href="./css/banner.css" rel="stylesheet" type="text/css">
     <link href="./css/principal.css" rel="stylesheet" type="text/css">
+    <link href="./css/pesquisar.css" rel="stylesheet" type="text/css">
     <link href="./css/informativo.css" rel="stylesheet" type="text/css">
     <link href="./css/rodape.css" rel="stylesheet" type="text/css">
     <link href="./css/validadores.css" rel="stylesheet" type="text/css">
@@ -25,16 +26,39 @@
                 <a class="nav__logo" href="index.html"><img src="./imagens/logo.svg" alt="Logo Alura" class="logo__img"></a>
                 <button class="nav__btn_login"><a class="btn__login_link" href="login.html">Login</a></button>
                 <div class="nav__pesquisa">
-                    <input type="text" class="pesquisa__input" data-pesquisa>
+                    <input type="text" class="pesquisa__input" data-pesquisa placeholder="Digite para pesquisar...">
                     <img src="./imagens/lupa.svg" alt="lupa de pesquisa" class="pesquisa__lupa" data-pesquisar>
                 </div>
             </nav>
         </section>
     </header>
-    <main>
-        <div class="principal__secao_boxes container" data-resultado>
+    <main ></main>
+        <div class="pesquisa__secao_boxes container" data-resultado>
 
         </div>
+        <section class="informativo container">
+            <div class="informativo__informacoes">
+                <img src="./imagens/logo.svg" alt="" class="informacoes__titulo">
+                <div class="informacoes__links">
+                    <a href="" class="informacoes__links-item">Quem somos nós</a>
+                    <a href="" class="informacoes__links-item">Política de privacidade</a>
+                    <a href="" class="informacoes__links-item">Programaa fidelidade</a>
+                    <a href="" class="informacoes__links-item">Nossas lojas</a>
+                    <a href="" class="informacoes__links-item">Quero ser franqueado</a>
+                    <a href="" class="informacoes__links-item">Anuncie aqui</a>
+                </div>
+            </div>
+            <div class="informativo__contato">
+                <h2 class="contato__titulo">Fale conosco</h2>
+                <form action="" class="contato__form">
+                    <input data-tipo="campo" type="text" class="form__nome" placeholder="Nome" maxlength="40" required>
+                    <span class="form__erro" data-tipo="msgErro"></span>
+                    <textarea data-tipo="campo" cols="30" rows="5" class="form__texto" placeholder="Escreva sua mensagem" maxlength="120" required data-tipo="texto"></textarea>
+                    <span class="form__erro" data-tipo="msgErro"></span>
+                    <button class="form__btn">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer class="rodape container">
         <p class="copyright"> &copy; Copyright Allan Machado Sobral - 2022</p>

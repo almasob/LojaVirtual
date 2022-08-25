@@ -1,0 +1,7 @@
+.pesquisa__secao_boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: .5rem;
+    row-gap: 1rem;
+}
