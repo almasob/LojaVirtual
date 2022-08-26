@@ -15,7 +15,7 @@ const novoProduto = (nome,preco,urlImagem,id) =>{
         <img src="${urlImagem}" alt="${nome}" class="box__img">
         <h3 class="box__nome">${nome}</h3>
         <h3 class="box__preco">${preco}</h3>
-        <h3 class="box__ver">Ver Produto</h3>
+        <h3 class="box__ver" data-ver>Ver Produto</h3>
         `
 
     card.innerHTML = conteudo;

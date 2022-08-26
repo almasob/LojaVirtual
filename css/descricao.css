@@ -72,7 +72,7 @@
     font-weight: var(--fonte-forca-titulo);
     color:var(--azul-padrao);
     font-size: var(--fonte-texto);
-
+    cursor: pointer;
 }
 
 

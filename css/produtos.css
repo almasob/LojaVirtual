@@ -79,6 +79,7 @@
 
 .box__ver{
     color:var(--azul-padrao);
+    cursor: pointer;
 }
 
 

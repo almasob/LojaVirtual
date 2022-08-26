@@ -67,6 +67,7 @@
 
 .box__ver{
     color:var(--azul-padrao);
+    cursor: pointer;
 }
 
 @media screen and (min-width:768px){

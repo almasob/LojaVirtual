@@ -61,6 +61,7 @@
     border: none;
     font-weight: var(--fonte-forca-botao);
     font-size: var(--fonte-texto);
+    cursor: pointer;
 }
 
 .form__nome::placeholder,.form__texto::placeholder{
