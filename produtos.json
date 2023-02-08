@@ -1,22 +1,15 @@
 {
   "produtos": [
     {
-      "nome": "Caneca Stormtrooper",
-      "urlImagem": "./imagens/starCaneca.jpg",
-      "preco": "R$57,00",
-      "id": 1
-    },
-    {
       "nome": "Lego Darth Vader",
       "preco": "R$499,00",
       "urlImagem": "./imagens/starLego.jpg",
-      "preco": "R$499,00",
       "id": 2
     },
     {
       "nome": "Boneco Mestre Jedi",
-      "preco": "R$100,00",
       "urlImagem": "./imagens/starBonecp.jpg",
+      "preco": "R$ 250,00",
       "id": 3
     },
     {
@@ -108,6 +101,12 @@
       "preco": "R$99,99",
       "urlImagem": "./imagens/diversosSonic.png",
       "id": 18
+    },
+    {
+      "nome": "Camiseta Goku",
+      "preco": "R$ 100,00",
+      "urlImagem": "https://cf.shopee.com.br/file/9a61a08c364fa72bc470e36ea394ba81",
+      "id": 19
     }
   ]
 }
